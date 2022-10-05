@@ -7,3 +7,19 @@ branding:
 runs:
   using: 'docker'
   image: 'docker://swaggerapi/swagger-codegen-cli'
+  args:
+  - ${{ inputs.action }}
+  - '-i'
+  - ${{ inputs.input }}
+  - '-l'
+  - ${{ inputs.language }}
+inputs:
+  language:
+    description: Swagger language
+    required: true
+  input:
+    description: Swagger file
+    required: true
+  action:
+    description: swagger-codegen-cli action
+    required: true
