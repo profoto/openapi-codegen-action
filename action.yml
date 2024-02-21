@@ -1,17 +1,17 @@
 # action.yml
-name: 'Swagger Codegen CLI'
-description: 'Run Swagger Codegen with Github Actions'
+name: 'OpenAPI Codegen CLI'
+description: 'Run OpenAPI Codegen with Github Actions'
 branding:
     icon: code
     color: green
 runs:
   using: 'docker'
-  image: 'docker://swaggerapi/swagger-codegen-cli-v3'
+  image: 'docker://openapitools/openapi-generator-cli'
   args:
   - ${{ inputs.action }}
   - '-i'
   - ${{ inputs.input }}
-  - '-l'
+  - '-g'
   - ${{ inputs.language }}
 inputs:
   language:
@@ -21,5 +21,5 @@ inputs:
     description: Swagger file
     required: true
   action:
-    description: swagger-codegen-cli action
+    description: openapi-generator-cli action
     required: true

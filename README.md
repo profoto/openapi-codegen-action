@@ -1,12 +1,12 @@
-# Swagger Codegen Github Actions
+# OpenAPI Codegen Github Action
 
-This action runs [Swagger Codegen](https://github.com/swagger-api/swagger-codegen) with Github Actions.
+This action runs [OpenAPI Codegen](https://github.com/OpenAPITools/openapi-generator) with Github Actions.
 
 Template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition.
 
 ## Inputs
 
-See [swagger-codegen-cli](https://github.com/swagger-api/swagger-codegen) for the full documentation.
+See [openapi-generator-cli](https://github.com/OpenAPITools/openapi-generator) for the full documentation.
 
 ### `action`
 
