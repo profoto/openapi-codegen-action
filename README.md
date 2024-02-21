@@ -6,6 +6,16 @@ Template-driven engine to generate documentation, API clients and server stubs i
 
 ## Inputs
 
-### `args`
+See [swagger-codegen-cli](https://github.com/swagger-api/swagger-codegen) for the full documentation.
 
-**Required** Same arguments as [swagger-codegen-cli](https://github.com/swagger-api/swagger-codegen)
+### `action`
+
+**Required** e.g. `generate`
+
+### `language`
+
+**Required** e.g. `openapi-yaml`
+
+### `input`
+
+**Required** input spec path or URL
